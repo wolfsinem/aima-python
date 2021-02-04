@@ -1,11 +1,16 @@
 import os.path
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append('/Users/wolfsinem/ABD-course/aima-python-1/tests')
+
 from tkinter import *
+
 
 from games import minmax_decision, alpha_beta_player, random_player, TicTacToe
 # "gen_state" can be used to generate a game state to apply the algorithm
-from tests.test_games import gen_state
+from test_games import gen_state
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 ttt = TicTacToe()
 root = None
@@ -214,7 +219,7 @@ def exit_game(root):
 
 
 if __name__ == "__main__":
-    global result, choices
+    # global result, choices
 
     root = Tk()
     root.title("TicTacToe")

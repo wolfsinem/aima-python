@@ -1,9 +1,11 @@
 import os.path
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from tkinter import *
 
 from agents import *
-
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 loc_A, loc_B = (0, 0), (1, 0)  # The two locations for the Vacuum world
 
